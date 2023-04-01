@@ -39,3 +39,15 @@ int main()
 
     return 0;
 }
+void multiplyMatrices(int mat1[][2], int mat2[][2], int result[][2])
+{
+    int i, j;
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            result[i][j] = mat1[i][0] * mat2[0][j] + mat1[i][1] * mat2[1][j];
+        }
+    }
+}
